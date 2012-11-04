@@ -11,8 +11,9 @@ window.onload = function() {
 	};
     
 	//start Crafty
-	Crafty.init(800, 600);
-	Crafty.canvas.init();
+	//Crafty.init(800, 600);
+    Crafty.init(400, 336);
+	// Crafty.canvas.init();
 	
 	require([
 	         "src/sprites.js?v="+version+"",
@@ -40,7 +41,16 @@ window.onload = function() {
 			Crafty.load(sprites.getPaths(), function() {
 				// array with local components
                 var elements = [
-                    "src/components/MouseHover.js?v="+version+"",
+                    //"src/components/MouseHover.js?v="+version+"",
+                    "src/components/AIControls.js?v="+version+"",
+                    "src/components/Ape.js?v="+version+"",
+                    "src/components/BananaBomb.js?v="+version+"",
+                    "src/components/BananaFire.js?v="+version+"",
+                    "src/components/BombDropper.js?v="+version+"",
+                    "src/components/Grid.js?v="+version+"",
+                    "src/components/LeftControls.js?v="+version+"",
+                    "src/components/RightControls.js?v="+version+"",
+                    "src/components/ShadowBananaFire.js?v="+version+"",
                     "src/entities/base/BaseEntity.js?v="+version+"",
 	    		];
 

@@ -1,6 +1,6 @@
 Config = Backbone.Model.extend({
     defaults: {
-        'renderType' : 'Canvas'
+        'renderType' : 'DOM' //Canvas 
     },
     initialize: function() {
        
