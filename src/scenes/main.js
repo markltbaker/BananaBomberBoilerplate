@@ -28,8 +28,9 @@ Crafty.scene("main", function() {
                 }
 
                 //create a fence of bushes
-                if(i === 0 || i === 24 || j === 0 || j === 20)
+                if(i === 0 || i === 24 || j === 0 || j === 20) {
                     gridEntity(i,j,2, "solid, bush" + Crafty.math.randomInt(1, 2))
+                }
 
                 //generate some nice flowers within the boundaries of the outer bushes
                 if (i > 0 && i < 24 && j > 0 && j < 20
